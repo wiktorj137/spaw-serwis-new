@@ -326,7 +326,8 @@ header.scrolled {
     
 }
 #benefits{
-    background: url('media/backgroungimg.jpg');
+    /* background: url('media/backgroungimg.jpg'); */
+    background-color: #333;
     background: cover;
     background-position:center;
     background-attachment: fixed;
@@ -482,6 +483,7 @@ header.scrolled {
     column-gap: 1rem;
     padding: 1.5rem 2rem;
     align-items: last baseline;
+    background-color: #171717;
 }
 
 /* Contact Section */
@@ -574,17 +576,14 @@ footer {
     z-index: 10;
 }
 
-slider-button.prev {
-    left: 10px;
+.slider-button.prev {
+    left: 0px;
 }
 
 .slider-button.next {
-    right: 10px;
+    right: 0px;
 }
 
-.slider-button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
 
 /* Dots for navigation */
 .slider-dots {
@@ -672,6 +671,7 @@ slider-button.prev {
     color: #666;
 }
 
+
 /* Przycisk nawigacji */
 .slider-button {
     position: absolute;
@@ -683,14 +683,17 @@ slider-button.prev {
     padding: 15px;
     cursor: pointer;
     z-index: 10;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     transition: background-color 0.3s ease;
     opacity: 0.6;
+    height: 100%;
+
+    
 }
 
 .slider-button:hover {
     background-color: rgba(0, 0, 0, 0.9);
-    opacity: 1;
+
 }
 
 .prev {
@@ -1049,6 +1052,7 @@ slider-button.prev {
 #contact .form-group {
     display: flex;
     flex-direction: column;
+    
 }
 
 #contact .form-group label {
@@ -1061,6 +1065,7 @@ slider-button.prev {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1em;
+    resize: none;
 }
 
 #contact .btn-primary {
