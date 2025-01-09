@@ -1,33 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description"
+        content="Spaw-Serwis oferuje usługi spawalnicze, szkolenia oraz nadzór na budowie. Skontaktuj się z nami, aby dowiedzieć się więcej o naszej ofercie.">
+    <meta name="keywords"
+        content="spawanie, usługi spawalnicze, szkolenia spawalnicze, nadzór budowlany, spawanie przemysłowe">
+
     <title>Spaw-Serwis</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "spaw-serwis",
+          "url": "https://www.spaw-serwis.com.pl",
+          "logo": "https://www.spaw-serwis.com.pl/SPAW_logo2.png",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+48 602 430 873",
+            "contactType": "Customer Service",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Grabie 137",
+                "addressLocality": "Węgrzce Wielkie",
+                "postalCode": "32-002",
+                "addressCountry": "PL"
+              }
+              
+          }
+        }
+        </script>
+    <link rel="shortcut icon" href="media/SPAW_logo2.png" type=" image/png">
+
 </head>
 
 <body>
     <header>
         <div class="topbar">
             <div class="left">
-                <img class="logo" src="SPAW_logo2.png" alt="">
+                <img class="logo" src="media/SPAW_logo2.png" loading="lazy"
+                    alt="Logo Spaw-Serwis - firma zajmująca się spawaniem i szkoleniami">
             </div>
             <div class="right">
-                <nav>
+                <nav role="navigation" aria-label="Główne menu">
                     <ul class="nav-links">
-                        <li><a href="#about">O nas</a></li>
-                        <li><a href="#services">Usługi</a></li>
-                        <li><a href="#projects">Projekty</a></li>
-                        <li><a href="#clients">Kontrahenci</a></li>
-                        <li><a href="#contact">Kontakt</a></li>
+                        <li><a title="Dowiedz się więcej o nas" href="#about">O nas</a></li>
+                        <li><a title="Zobacz naszą ofertę usług" href="#services">Usługi</a></li>
+                        <li><a title="Zobacz nasze projekty" href="#projects">Projekty</a></li>
+                        <li><a title="Zobacz firmy z którymi współpracowaliśmy" href="#clients">Kontrahenci</a></li>
+                        <li><a title="Zobacz adres oraz kontakt do nas" href="#contact">Kontakt</a></li>
                     </ul>
                 </nav>
                 <div class="hamburger" onclick="toggleMenu()">
@@ -41,13 +70,15 @@
 
     <section id="hero">
         <div class="video-background">
-            <video autoplay loop muted>
-                <source src="135849-764362069.mp4" type="video/mp4">
+            <video autoplay loop muted aria-label="Wideo w tle przedstawiające spawanie">
+                <source src="media/135849-764362069.mp4" type="video/mp4">
                 Twoja przeglądarka nie obsługuje wideo.
             </video>
+
         </div>
         <div class="hero-content">
-            <h1>Welding Skills & Development</h1>
+            <h1>SPAW-SERWIS</h1>
+            <h2>Welding Skills & Development</h2>
             <p>Spawanie to nasza pasja, a precyzja to nasz standard. <b>Kształcimy mistrzów.</b></p>
             <a href="#services" class="btn-primary">Dowiedz się więcej</a>
         </div>
@@ -75,7 +106,10 @@
                     <p>Dzięki nowoczesnej technologii oraz innowacyjnym technikom, wnosimy niezrównaną precyzję do
                         każdego zadania.</p>
                 </div>
-                <div class="image"></div>
+                <div class="image1">
+                    <img src="media/2024-11-30.webp" alt="Właściciel firmy spaw-serwis, Mariusz Jaworski"
+                        loading="lazy">
+                </div>
             </div>
         </div>
     </section>
@@ -85,37 +119,29 @@
             <h2 class="section-title">Nasza Ekspertyza</h2>
             <div class="service-cards">
                 <div class="card">
-                    <div class="icon"></div>
+                    <div class="icon"><img class="book-icon" src="media/icons/study-icon.svg" alt=""></div>
+                    <h3>Szkolenia Spawalnicze</h3>
+                    <p>Nasze kompleksowe programy szkoleniowe wyposażają profesjonalistów w najlepsze umiejętności.</p>
+                    <a href="szkolenia.html" class="btn-more">Dowiedz się więcej</a>
+                </div>
+                <div class="card">
+                    <div class="icon"><img class="welder-icon" src="media/icons/welding.svg" alt=""></div>
                     <h3>Zaawansowane Spawanie</h3>
                     <p>Wykorzystujemy najnowsze technologie spawalnicze, by zapewnić bezbłędne rezultaty za każdym
                         razem.</p>
+                    <a href="spawanie.html" class="btn-more">Dowiedz się więcej</a>
                 </div>
                 <div class="card">
-                    <div class="icon"></div>
-                    <h3>Profesjonalne Szkolenia</h3>
-                    <p>Nasze kompleksowe programy szkoleniowe wyposażają profesjonalistów w najlepsze umiejętności.</p>
-                </div>
-                <div class="card">
-                    <div class="icon"></div>
+                    <div class="icon"><img class="helmet-icon" src="media/icons/hardhat-icon.svg" alt=""></div>
                     <h3>Nadzór na Budowie</h3>
                     <p>Ekspercki nadzór nad skomplikowanymi projektami zapewnia bezpieczeństwo i precyzję.</p>
+                    <a href="nadzor.html" class="btn-more">Dowiedz się więcej</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="section section-light">
-        <div class="container">
-            <h2 class="section-title">Nasze Projekty</h2>
-            <div class="slider">
-                <div class="slide">Projekt Alpha</div>
-                <div class="slide">Projekt Beta</div>
-                <div class="slide">Projekt Gamma</div>
-            </div>
-        </div>
-    </section>
-
-    <section id="clients" class="section section-dark">
+    <section id="clients" class="section">
         <div class="container">
             <h2 class="section-title">Nasi Kontrahenci</h2>
             <div class="client-slider-wrapper">
@@ -165,34 +191,91 @@
         </div>
     </section>
 
-    <section id="contact" class="section section-dark">
-        <div id="map"></div>
+    <section id="benefits" class="section section-light">
+        <div class="container benefitscont">
+            <div class="benefits-back">
+                <h2 class="section-title">Korzyści ze Współpracy z Nami</h2>
+                <p class="section-subtitle">Od 1998 roku specjalizujemy się w kompleksowych usługach spawalniczych –
+                    szkoleniach, nadzorze oraz wdrażaniu nowoczesnych technologii.</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <img src="media/icons/szkolenia-k.svg" alt="Szkolenia spawalnicze" class="benefit-icon">
+                    <h3>Profesjonalne Szkolenia</h3>
+                    <p>Specjalistyczne kursy spawalnicze prowadzone z indywidualnym podejściem do każdego kursanta.</p>
+                </div>
 
+                <div class="benefit-card">
+                    <img src="media/icons/spawarka-k.svg" alt="Nowoczesny sprzęt" class="benefit-icon">
+                    <h3>Najlepszy Sprzęt na Rynku</h3>
+                    <p>Szkolenia i usługi realizujemy z wykorzystaniem najwyższej klasy spawarek renomowanej marki
+                        Fronius.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <img src="media/icons/doradztwo-k.svg" alt="Doradztwo techniczne" class="benefit-icon">
+                    <h3>Doradztwo Techniczne</h3>
+                    <p>Pomagamy dobrać odpowiednie technologie i procesy spawalnicze dostosowane do potrzeb klienta.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <img src="media/icons/lupa-k.svg" alt="Nadzór spawalniczy" class="benefit-icon">
+                    <h3>Nadzór Spawalniczy</h3>
+                    <p>Zapewniamy pełen nadzór nad pracami spawalniczymi, dbając o najwyższą jakość realizacji.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="contact" class="section section-dark">
         <div class="container">
             <h2 class="section-title">Skontaktuj się z nami</h2>
             <p class="algcenter"><b>Gotowy, aby rozpocząć swój kolejny projekt spawalniczy? </b> <br>
-                Skontaktuj się z nami w celu
-                konsultacji lub
-                zapytań.</p>
-            <form action="#">
-                <div class="form-group">
-                    <label for="name">Twoje imię</label>
-                    <input type="text" id="name" placeholder="Wpisz swoje imię" required>
+                Skontaktuj się z nami w celu konsultacji lub pytań.</p>
+            <div class="contact-wrapper">
+                <form action="#">
+                    <div class="form-group">
+                        <label for="name">Twoje imię</label>
+                        <input type="text" id="name" placeholder="Wpisz swoje imię" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Twój email</label>
+                        <input type="email" id="email" placeholder="Wpisz swój email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Twoja wiadomość</label>
+                        <textarea id="message" rows="5" placeholder="Wpisz swoją wiadomość" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Wyślij wiadomość</button>
+                </form>
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3>SPAW-SERWIS</h3>
+                        <p><strong>Mariusz Jaworski</strong></p>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Grabie 137, 32-002 Węgrzce Wielkie</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <p>Tel: <a href="tel:+48602430873">602-430-873</a></p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>E-mail: <a href="mailto:info@spaw-serwis.com.pl">info@spaw-serwis.com.pl</a></p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-id-card"></i>
+                            <p>NIP: 683 128 60 25</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="email">Twój email</label>
-                    <input type="email" id="email" placeholder="Wpisz swój email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Twoja wiadomość</label>
-                    <textarea id="message" rows="5" placeholder="Wpisz swoją wiadomość" required></textarea>
-                </div>
-                <button type="submit" class="btn-primary">Wyślij wiadomość</button>
-            </form>
-
-
+            </div>
+            <div id="map"></div>
         </div>
-
         <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     </section>
 
@@ -202,92 +285,7 @@
         </div>
     </footer>
 
-
     <script>
-        const clientSlider = document.querySelector('.client-slider');
-        const slides = document.querySelectorAll('.client-slide');
-        const prevButton = document.querySelector('.slider-button.prev');
-        const nextButton = document.querySelector('.slider-button.next');
-        let dots = document.querySelectorAll('.slider-dot');
-        let currentIndex = 0;
-        const totalSlides = slides.length;
-
-        function updateClientSlider() {
-            clientSlider.style.transform = `translateX(-${currentIndex * 100}%)`;
-            clientSlider.style.transition = 'transform 0.5s ease';
-        }
-
-        function updateDots() {
-            dots.forEach((dot, index) => {
-                dot.classList.remove('active');
-                if (index === currentIndex) {
-                    dot.classList.add('active');
-                }
-            });
-        }
-
-        // Function to generate dots dynamically based on the number of slides
-        function createDots() {
-            const dotsContainer = document.querySelector('.slider-dots');
-            dotsContainer.innerHTML = ''; // Remove existing dots
-            for (let i = 0; i < totalSlides; i++) {
-                const dot = document.createElement('span');
-                dot.classList.add('slider-dot');
-                dotsContainer.appendChild(dot);
-            }
-            dots = document.querySelectorAll('.slider-dot'); // Refresh the dots array
-            updateDots(); // Update the dots immediately after creating them
-
-            // Add event listeners to the new dots
-            dots.forEach((dot, index) => {
-                dot.addEventListener('click', () => {
-                    currentIndex = index;
-                    updateClientSlider();
-                    updateDots();
-                });
-            });
-        }
-
-        createDots(); // Call this function to generate dots
-
-        prevButton.addEventListener('click', () => {
-            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-            updateClientSlider();
-            updateDots();
-        });
-
-        nextButton.addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % totalSlides;
-            updateClientSlider();
-            updateDots();
-        });
-
-        // Automatic slide transition every 5 seconds
-        setInterval(() => {
-            currentIndex = (currentIndex + 1) % totalSlides;
-            updateClientSlider();
-            updateDots();
-        }, 5000);
-
-        function toggleMenu() {
-            const navLinks = document.querySelector('.nav-links');
-            navLinks.classList.toggle('active');
-        }
-
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            header.classList.toggle('scrolled', window.scrollY > 50);
-        });
-
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
         // Współrzędne dla Grabie 137, 32-002 Węgrzce Wielkie
         var map = L.map('map').setView([50.0764, 20.2744], 15);
 
@@ -301,6 +299,8 @@
             .bindPopup('<b>Grabie 137, 32-002 Węgrzce Wielkie</b>')
             .openPopup();
     </script>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
