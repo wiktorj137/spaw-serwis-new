@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description"
+        content="Spaw-Serwis oferuje nadzór spawalniczy na budowach oraz innych projektach przemysłowych. Zapewniamy pełen nadzór nad procesami spawalniczymi, zapewniając zgodność z normami i wysoką jakość prac.">
+    <meta name="keywords"
+        content="nadzór spawalniczy, usługi spawalnicze, nadzór budowlany, kontrola jakości spawania, spawanie przemysłowe">
+
+    <title>Spaw-Serwis - Nadzór Spawalniczy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "spaw-serwis",
+          "url": "https://www.spaw-serwis.com.pl",
+          "logo": "https://www.spaw-serwis.com.pl/SPAW_logo2.png",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+48 602 430 873",
+            "contactType": "Customer Service",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Grabie 137",
+                "addressLocality": "Węgrzce Wielkie",
+                "postalCode": "32-002",
+                "addressCountry": "PL"
+              }
+          }
+        }
+    </script>
+    <link rel="shortcut icon" href="media/SPAW_logo2.png" type=" image/png">
+
+</head>
+
+<body>
+    <header>
+        <div class="topbar">
+            <div class="left">
+                <img class="logo" src="media/SPAW_logo2.png" loading="lazy"
+                    alt="Logo Spaw-Serwis - firma zajmująca się spawaniem i szkoleniami">
+            </div>
+            <div class="right">
+                <nav role="navigation" aria-label="Główne menu">
+                    <ul class="nav-links">
+                        <li><a title="Dowiedz się więcej o nas" href="index.html">O nas</a></li>
+                        <li><a title="Zobacz naszą ofertę usług" href="szkolenia.html">Szkolenia Spawalnicze</a></li>
+                        <li><a title="Zobacz firmy z którymi współpracowaliśmy" href="uslugi.html">Usługi</a></li>
+                        <li><a title="Zobacz adres oraz kontakt do nas" href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </nav>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section section-light training-intro">
+        <div class="container">
+            <h1 class="section-title">Nadzór Spawalniczy</h1>
+            <div class="content-wrapper">
+                <div class="text">
+                    <div class="text1">
+                        <h3>Nasze Usługi Nadzoru Spawalniczego</h3>
+                        <p>
+                            Spaw-Serwis oferuje kompleksowy nadzór spawalniczy na budowach oraz w innych branżach
+                            przemysłowych. Zapewniamy profesjonalną kontrolę jakości spawania, zgodność z normami oraz
+                            optymalizację procesów spawalniczych.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Korzyści ze Współpracy z Nami</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <!-- <div class="icon"><img class="book-icon" src="media/icons/study-icon.svg" alt=""></div> -->
+                    <h3>Profesjonalizm w Nadzorze</h3>
+                    <p>Oferujemy kompleksowy nadzór nad procesami spawalniczymi na budowach, zapewniając, że wszystkie
+                        prace są zgodne z normami oraz spełniają najwyższe standardy jakości.</p>
+                </div>
+                <div class="card">
+                    <!-- <div class="icon"><img class="welder-icon" src="media/icons/welding.svg" alt=""></div> -->
+                    <h3>Zaawansowane Technologie i Sprzęt</h3>
+                    <p>Do nadzoru nad spawaniem wykorzystujemy nowoczesny sprzęt, co pozwala nam kontrolować każdy etap
+                        procesu spawalniczego oraz zapewniać jego wysoką jakość.</p>
+                </div>
+                <div class="card">
+                    <!-- <div class="icon"><img class="helmet-icon" src="media/icons/hardhat-icon.svg" alt=""></div> -->
+                    <h3>Optymalizacja Procesów Spawalniczych</h3>
+                    <p>Pomagamy w optymalizacji procesów spawalniczych, minimalizując ryzyko błędów i poprawiając
+                        efektywność pracy na budowie.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="methods" class="section section-light">
+        <div class="container benefitscont">
+            <div class="benefits-back">
+                <h2 class="section-title">Nadzór Spawalniczy na Budowie</h2>
+                <p class="section-subtitle">Nasz nadzór obejmuje zarówno kontrolę jakości, jak i zgodności z normami
+                    spawalniczymi. Prowadzimy nadzór na budowach, dbając o terminowość oraz jakość wykonywanych prac.
+                </p>
+            </div>
+            <div class="methods-grid">
+                <div class="benefit-card darker">
+                    <h3>Kontrola Jakości Spawania</h3>
+                    <p>Przeprowadzamy szczegółową kontrolę jakości spawów, aby zapewnić ich trwałość oraz zgodność z
+                        wymaganiami technicznymi.</p>
+                </div>
+
+                <div class="benefit-card darker">
+                    <h3>Wsparcie Techniczne</h3>
+                    <p>Oferujemy wsparcie techniczne podczas realizacji projektów spawalniczych, pomagając w
+                        rozwiązywaniu trudnych zagadnień technologicznych.</p>
+                </div>
+
+                <div class="benefit-card darker">
+                    <h3>Raportowanie i Dokumentacja</h3>
+                    <p>Dokumentujemy cały proces nadzoru spawalniczego, przygotowując raporty i rekomendacje dotyczące
+                        jakości oraz zgodności z normami.</p>
+                </div>
+
+                <div class="benefit-card darker">
+                    <h3>Współpraca z Inżynierami i Projektantami</h3>
+                    <p>Nasza współpraca z inżynierami oraz projektantami pozwala na skuteczne rozwiązywanie problemów
+                        oraz dopasowanie technologii spawalniczej do wymagań projektu.</p>
+                </div>
+
+                <div class="benefit-card darker">
+                    <h3>Kontrola Terminowości</h3>
+                    <p>Monitorujemy postęp prac na budowie, dbając o terminową realizację zleceń oraz skuteczną
+                        organizację procesów spawalniczych.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p class="footer-text">&copy; 2025 Spaw-Serwis. Stworzone z precyzją i dbałością o każdy szczegół.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

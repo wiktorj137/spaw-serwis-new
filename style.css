@@ -326,11 +326,7 @@ header.scrolled {
     
 }
 #benefits{
-    /* background: url('media/backgroungimg.jpg'); */
     background-color: #333;
-    background: cover;
-    background-position:center;
-    background-attachment: fixed;
     padding: 5rem 0;
 }
 
@@ -765,7 +761,7 @@ footer {
         width: 100%;
         padding: 20px;
     }
-    #benefits{
+    #benefits, #methods{
         background: #333;
     }
     .nav-links {
@@ -983,30 +979,19 @@ footer {
     overflow: hidden;
     height: auto;
     padding: 0 2rem;
-    
-}
-
-
-.contact-card {
-    background-color: transparent;
-    border-radius: 8px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     text-align: left;
-    width: 100%;
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgb(57, 57, 57);
 }
 
-
-.contact-card h3 {
+.contact-info h3 {
     margin-bottom: 10px;
     font-size: 1.8em;
     color: #333;
 }
 
-.contact-card p {
+.contact-info p {
     margin: 5px 0;
     font-size: 1em;
     color: #555;
@@ -1014,16 +999,16 @@ footer {
     align-items: center;
 }
 
-.contact-card a {
+.contact-info a {
     color: #222;
     text-decoration: none;
 }
 
-.contact-card a:hover {
+.contact-info a:hover {
     text-decoration: underline;
 }
 
-.contact-card i {
+.contact-info i {
     margin-right: 10px;
     color: #e74c3c;
 }
@@ -1100,4 +1085,43 @@ footer {
     #map {
         order: 1; /* Ensure the map wraps under the form and contact info */
     }
+}
+/* Styles for Spawalnicze Training Page */
+
+.training-intro {
+    /* background-color: #f9f9f9; */
+    margin: 4rem 0;
+    font-size: 1.3rem;
+
+}
+.text1 {
+    background-color: #dddddd80;
+    padding: 1rem;
+    border-radius: 1rem;
+    /* border: solid 0.2rem #555; */
+    margin-top: 3rem;
+    color: #171717;
+    text-align: center;
+
+}
+.methods-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 kolumny, 50% szerokości dla każdego elementu */
+    gap: 20px;
+}
+
+.methods-grid > .benefit-card:nth-child(odd):last-child {
+    grid-column: span 2; /* Jeśli jest nieparzysty i ostatni, zajmuje całą szerokość */
+}
+#methods{
+    /* background: url('media/backgroungimg.jpg'); */
+    background-color: none;
+    padding: 5rem 0;
+}
+#addservices{
+background-color: #333;
+    padding: 5rem 0;
+}
+.darker{
+    background-color: #dddddd80;
 }

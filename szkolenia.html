@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description"
+        content="Spaw-Serwis oferuje usługi spawalnicze, szkolenia oraz nadzór na budowie. Skontaktuj się z nami, aby dowiedzieć się więcej o naszej ofercie.">
+    <meta name="keywords"
+        content="spawanie, usługi spawalnicze, szkolenia spawalnicze, nadzór budowlany, spawanie przemysłowe">
+
+    <title>Spaw-Serwis - Szkolenia Spawalnicze</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "spaw-serwis",
+          "url": "https://www.spaw-serwis.com.pl",
+          "logo": "https://www.spaw-serwis.com.pl/SPAW_logo2.png",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+48 602 430 873",
+            "contactType": "Customer Service",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Grabie 137",
+                "addressLocality": "Węgrzce Wielkie",
+                "postalCode": "32-002",
+                "addressCountry": "PL"
+              }
+              
+          }
+        }
+        </script>
+    <link rel="shortcut icon" href="media/SPAW_logo2.png" type=" image/png">
+
+</head>
+
+<body>
+    <header>
+        <div class="topbar">
+            <div class="left">
+                <img class="logo" src="media/SPAW_logo2.png" loading="lazy"
+                    alt="Logo Spaw-Serwis - firma zajmująca się spawaniem i szkoleniami">
+            </div>
+            <div class="right">
+                <nav role="navigation" aria-label="Główne menu">
+                    <ul class="nav-links">
+                        <li><a title="Dowiedz się więcej o nas" href="index.html">O nas</a></li>
+                        <li><a title="Zobacz naszą ofertę usług" href="szkolenia.html">Szkolenia Spawalnicze</a></li>
+                        <li><a title="Zobacz firmy z którymi współpracowaliśmy" href="uslugi.html">Usługi</a></li>
+                        <li><a title="Zobacz adres oraz kontakt do nas" href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </nav>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section section-light training-intro">
+        <div class="container">
+            <h1 class="section-title">Szkolenia Spawalnicze – Oferta Kursów i Usług</h1>
+            <div class="content-wrapper">
+                <div class="text">
+                    <div class="text1">
+                        <h3>Nasze szkolenia to nie tylko nauka</h3>
+                        <p>
+                            ale przede wszystkim zdobywanie praktycznych umiejętności pod okiem doświadczonego
+                            instruktora.
+                        </p>
+                    </div>
+                    <div class="text1">
+                        <h3>Szkolenia prowadzę osobiście</h3>
+                        <p>Bazując na ponad 25-letnim doświadczeniu w
+                            branży spawalniczej,
+                            obejmującym pracę przy prestiżowych projektach przemysłowych i budowlanych.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="services" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Korzyści ze Szkolenia</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <!-- <div class="icon"><img class="book-icon" src="media/icons/study-icon.svg" alt=""></div> -->
+                    <h3>Indywidualne podejście</h3>
+                    <p>Każdy kursant otrzymuje pełną uwagę i wsparcie podczas nauki. Dzięki temu dostosowujemy tempo
+                        oraz zakres szkolenia do jego umiejętności.</p>
+                </div>
+                <div class="card">
+                    <!-- <div class="icon"><img class="welder-icon" src="media/icons/welding.svg" alt=""></div> -->
+                    <h3>Ponad 32 lata doświadczenia</h3>
+                    <p>Szkolenia prowadzę osobiście jako certyfikowany instruktor z wieloletnią praktyką. Kursanci uczą
+                        się na nowoczesnym sprzęcie Fronius.</p>
+                </div>
+                <div class="card">
+                    <!-- <div class="icon"><img class="helmet-icon" src="media/icons/hardhat-icon.svg" alt=""></div> -->
+                    <h3>Przygotowanie do certyfikacji</h3>
+                    <p>Szkolenia przygotowują do egzaminów spawalniczych według norm ISO 9606-1, co pozwala na zdobycie
+                        cenionych certyfikatów.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="methods" class="section section-light">
+        <div class="container benefitscont">
+            <div class="benefits-back">
+                <h2 class="section-title">Metody Spawania, które Oferujemy</h2>
+                <p class="section-subtitle">Oferujemy kursy spawalnicze w wielu metodach, które umożliwiają zdobycie
+                    umiejętności w różnych technologiach spawania.</p>
+            </div>
+            <div class="methods-grid">
+                <div class="benefit-card darker">
+                    <h3>Spawanie MAG</h3>
+                    <p>Metoda spawania łukowego drutem proszkowym w osłonie gazów aktywnych, wykorzystywana w szerokim
+                        zakresie aplikacji przemysłowych.</p>
+                </div>
+
+                <div class="benefit-card darker">
+                    <h3>Spawanie TIG</h3>
+                    <p>Spawanie elektrodą nietopliwą w osłonie gazów obojętnych, idealne do spawania stali nierdzewnej i
+                        aluminium.</p>
+                </div>
+
+                <div class="benefit-card darker">
+                    <h3>Spawanie MMA</h3>
+                    <p>Ręczne spawanie elektrodą otuloną, powszechnie stosowane w przemyśle budowlanym i naprawczym.</p>
+                </div>
+
+                <div class="benefit-card darker">
+                    <h3>Spawanie GMAW</h3>
+                    <p>Spawanie aluminium i jego stopów metodą MIG, wykorzystywane do prac w przemyśle lekkim i
+                        lotniczym.</p>
+                </div>
+
+                <div class="benefit-card darker">
+                    <h3>Spawanie GAW</h3>
+                    <p>Spawanie gazowe z użyciem palnika, tradycyjna metoda stosowana w pracach naprawczych i spawaniu
+                        cienkich materiałów.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="addservices" class="section section-light">
+        <div class="container benefitscont">
+            <div class="benefits-back">
+                <h2 class="section-title">Szkolenia Dla Firm</h2>
+                <p class="section-subtitle">Oferujemy profesjonalne szkolenia spawalnicze dostosowane do potrzeb firm.
+                    Nasze kursy mogą odbywać się na terenie zakładu, co pozwala na szkolenie pracowników bez
+                    konieczności wyjazdów. Dzięki elastycznemu podejściu dostosowujemy programy szkoleń do specyfiki
+                    działalności Twojej firmy, pomagając w podnoszeniu kompetencji pracowników oraz efektywności
+                    procesów spawalniczych.</p>
+            </div>
+            <div class="methods-grid">
+                <div class="benefit-card">
+                    <h3>Szkolenia Na Terenie Zakładu</h3>
+                    <p>Szkolenia przeprowadzamy bezpośrednio w Twojej firmie, co pozwala na większą wygodę dla
+                        pracowników i elastyczność w organizacji zajęć. Kursy dostosowujemy do Twoich potrzeb, biorąc
+                        pod uwagę specyfikę zakładu oraz wymagania branżowe.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <h3>Doradztwo Techniczne</h3>
+                    <p>Nasze szkolenia obejmują także doradztwo techniczne, które pomoże w optymalizacji procesów
+                        spawalniczych. Pomożemy dobrać odpowiednią technologię spawania, odpowiednią do specyfiki Twojej
+                        produkcji, oraz wdrożyć najlepsze praktyki spawalnicze w firmie.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <h3>Nadzór Nad Szkoleniami</h3>
+                    <p>Nasze kursy to nie tylko teoria, ale przede wszystkim praktyczne umiejętności. Nadzorujemy
+                        procesy szkoleniowe, dbając o ich jakość i zgodność z normami. Dzięki temu masz pewność, że Twoi
+                        pracownicy zdobędą odpowiednie kwalifikacje, które będą miały realny wpływ na efektywność
+                        produkcji.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <h3>Szkolenia Z Wdrażania Nowych Technologii</h3>
+                    <p>Nasze szkolenia obejmują także wdrażanie nowych technologii spawalniczych, takich jak WPQR.
+                        Dzięki naszym kursom, Twoja firma będzie na bieżąco z najnowszymi rozwiązaniami w branży, co
+                        pozwoli na poprawę jakości i wydajności procesów spawalniczych.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <h3>Certyfikacja Procesów Spawalniczych</h3>
+                    <p>Oferujemy pomoc w uzyskaniu certyfikatów dla technologii spawalniczych, które są niezbędne do
+                        zapewnienia zgodności z normami jakościowymi. Dzięki naszym szkoleniom, Twoja firma będzie mogła
+                        uzyskać niezbędne certyfikaty, co poprawi jej konkurencyjność na rynku.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="container">
+            <p class="footer-text">&copy; 2025 Spaw-Serwis. Stworzone z precyzją i dbałością o każdy szczegół.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

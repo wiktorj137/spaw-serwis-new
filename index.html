@@ -52,11 +52,10 @@
             <div class="right">
                 <nav role="navigation" aria-label="Główne menu">
                     <ul class="nav-links">
-                        <li><a title="Dowiedz się więcej o nas" href="#about">O nas</a></li>
-                        <li><a title="Zobacz naszą ofertę usług" href="#services">Usługi</a></li>
-                        <li><a title="Zobacz nasze projekty" href="#projects">Projekty</a></li>
-                        <li><a title="Zobacz firmy z którymi współpracowaliśmy" href="#clients">Kontrahenci</a></li>
-                        <li><a title="Zobacz adres oraz kontakt do nas" href="#contact">Kontakt</a></li>
+                        <li><a title="Dowiedz się więcej o nas" href="index.html">O nas</a></li>
+                        <li><a title="Zobacz naszą ofertę usług" href="szkolenia.html">Szkolenia Spawalnicze</a></li>
+                        <li><a title="Zobacz firmy z którymi współpracowaliśmy" href="uslugi.html">Usługi</a></li>
+                        <li><a title="Zobacz adres oraz kontakt do nas" href="kontakt.html">Kontakt</a></li>
                     </ul>
                 </nav>
                 <div class="hamburger" onclick="toggleMenu()">
@@ -227,78 +226,11 @@
         </div>
     </section>
 
-
-
-
-    <section id="contact" class="section section-dark">
-        <div class="container">
-            <h2 class="section-title">Skontaktuj się z nami</h2>
-            <p class="algcenter"><b>Gotowy, aby rozpocząć swój kolejny projekt spawalniczy? </b> <br>
-                Skontaktuj się z nami w celu konsultacji lub pytań.</p>
-            <div class="contact-wrapper">
-                <form action="#">
-                    <div class="form-group">
-                        <label for="name">Twoje imię</label>
-                        <input type="text" id="name" placeholder="Wpisz swoje imię" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Twój email</label>
-                        <input type="email" id="email" placeholder="Wpisz swój email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Twoja wiadomość</label>
-                        <textarea res id="message" rows="5" placeholder="Wpisz swoją wiadomość" required></textarea>
-                    </div>
-                    <button type="submit" class="btn-primary">Wyślij wiadomość</button>
-                </form>
-                <div class="contact-info">
-                    <div class="contact-card">
-                        <h3>SPAW-SERWIS</h3>
-                        <p><strong>Mariusz Jaworski</strong></p>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <p>Grabie 137, 32-002 Węgrzce Wielkie</p>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <p>Tel: <a href="tel:+48602430873">602-430-873</a></p>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <p>E-mail: <a href="mailto:info@spaw-serwis.com.pl">info@spaw-serwis.com.pl</a></p>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-id-card"></i>
-                            <p>NIP: 683 128 60 25</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="map"></div>
-        </div>
-        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    </section>
-
     <footer>
         <div class="container">
             <p class="footer-text">&copy; 2025 Spaw-Serwis. Stworzone z precyzją i dbałością o każdy szczegół.</p>
         </div>
     </footer>
-
-    <script>
-        // Współrzędne dla Grabie 137, 32-002 Węgrzce Wielkie
-        var map = L.map('map').setView([50.0764, 20.2744], 15);
-
-        // Dodanie warstwy mapy OpenStreetMap
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
-
-        // Dodanie pinezki z informacją o adresie
-        var marker = L.marker([50.0764, 20.2744]).addTo(map)
-            .bindPopup('<b>Grabie 137, 32-002 Węgrzce Wielkie</b>')
-            .openPopup();
-    </script>
 
     <script src="script.js"></script>
 </body>
